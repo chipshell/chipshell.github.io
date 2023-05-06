@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+which supersimple__ >/dev/null || {
+  echo Please install supersimple: https://chipshell.org/p/supersimple
+  exit
+}
+
+chipshell supersimple__ --site public_html --templates public_wiki --type md $@
